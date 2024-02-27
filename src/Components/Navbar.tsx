@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Style/Navbar.css';
 import { useLocation } from 'react-router-dom';
+import Logo from '../assets/image/hamster-webTitulo.png';
 
 const NavBar = () => {
     const location = useLocation();
@@ -17,7 +18,9 @@ const NavBar = () => {
 
     return (
         <nav className="navbar">
-            <div className="navbar-brand">Logo</div>
+            <div className="navbar-brand">
+                <img src={Logo} alt="" style={{width:'45%'}} />
+            </div>
             <ul className="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="">Acerca de nosotros</a></li>
